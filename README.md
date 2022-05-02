@@ -53,6 +53,10 @@ Architecture
 * A Postgres database backed by a Docker volume
 * A Node.js webapp which shows the results of the voting in real time
 
+* Buils status
+* [![Build Status](http://132.145.29.254:8080/buildStatus/icon?job=mvn-compile)](http://132.145.29.254:8080/job/mvn-compile/)
+
+
 
 Note
 ----
