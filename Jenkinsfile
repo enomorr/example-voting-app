@@ -30,7 +30,7 @@ pipeline {
                 dir('result'){
                     sh 'npm install'
                     sh 'npm test'
-                    archiveArtifacts artifacts: **/*.js', fingerprint: true
+                    archiveArtifacts artifacts: '**/*.js', fingerprint: true
                 }
                 
             }
