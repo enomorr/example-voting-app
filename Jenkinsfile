@@ -8,7 +8,7 @@ pipeline {
             steps {
                 echo 'Building..'
                 dir('worker'){
-                    sh 'cd worker mvn compile'
+                    sh 'mvn compile'
 
                 }
                 
