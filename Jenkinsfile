@@ -27,9 +27,9 @@ pipeline {
             steps {
                 echo 'Packaging....'
                 dir('worker'){
-                    sh 'mvn package'
+                    sh 'mvn package -DskipTests'
                 }
-                sh 'mvn -f worker/pom.xml Package -DskipTests'
+                
             }
         }
     }
