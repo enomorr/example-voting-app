@@ -24,5 +24,15 @@ pipeline {
                 
             }
         }
+        stage('package') {
+            steps {
+                echo 'Packaging..'
+                dir('result'){
+                    sh 'npm install'
+                    sh 'npm test'
+                    sh 'tar cvf myarachivedfile.tar *.js
+                }
+                
+            }
 }
 }
