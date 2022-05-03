@@ -59,3 +59,6 @@ Note
 ----
 
 The voting application only accepts one vote per client. It does not register votes if a vote has already been submitted from a client.
+
+* Build step
+* [![Build Status](http://132.145.29.254:8080/buildStatus/icon?job=nodeJSbuild)](http://132.145.29.254:8080/job/nodeJSbuild/)
