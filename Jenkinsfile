@@ -36,7 +36,7 @@ pipeline {
     post{
        always{
           archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true
-          echo 'This was successfully built and packaged this app'
+          echo 'This was successfully built and packaged'
     }
 }
     
