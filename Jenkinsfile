@@ -17,12 +17,18 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
-                sh 'mvn test'
+                dir('worker'){
+                    sh 'mvn test'
+                }
+                
             }
         }
         stage('Package') {
             steps {
                 echo 'Packaging....'
+                dir('worker'){
+                    sh 'mvn package'
+                }
                 sh 'mvn -f worker/pom.xml Package -DskipTests'
             }
         }
